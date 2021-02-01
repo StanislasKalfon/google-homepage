@@ -5,25 +5,98 @@
             border-width: 0%;
             outline: none;
             width: 400px;
-            height: 40px;
-            border-radius: 90px;
-            border-color: violet;
+            height: 44px;
+            border-radius: 24px;
+            opacity: 0.7;
+            border: 2px solid;
+            color:rgb(202, 99, 99);
+            border-color: rgb(61, 64, 66);
+            font-weight: 50px;
+            font-size: 18px;
+            position: absolute;
+            top: 33%;
+            left: 35%
         }
 
-        .logo{
-            width: 250px;
+        .search-bar:hover{
+            box-shadow: 0 0 22px rgba(33,33,33,.2); 
         }
 
-        .button{
+        .center-screen {
+            position: absolute;
+            top: 22%;
+            left: 40%;    
+        }
+
+        .button-extra{
+            font-family: arial, sans-serif;
+            font-size: 14px;
+            height: 36px;
+            border: 0px solid;
+            border-radius: 4px;
+            background-color: #f8f9fa;
+            color: rgb(61, 64, 66);
+            text-align: center;
+            font-size: 16px;
+        }
+
         
+
+        .small-buttons{
+            border: none;
+            background-color: white;
+        }
+
+        button:hover{
+            color: black;
+            outline: none;
+            background-color: #f8f9fa;
+            cursor: pointer;
+            border: 1px solid;
+        }
+
+        
+
+        .sign-in{
+            background-color: rgb(74, 90, 235);
+            color: white;
+            border: none;
+            height: 32px;
+            border-radius: 4px;
+            width: 70px;
+
+        }
+
+        .center-button{
+            position: absolute;
+            top: 40%;
+            left: 41%;
         }
         
     </style>
 
 <body>
-    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google" class="logo">
-    <input type="search" class="search-bar">
-    <button type="submit" class="button">Google Search</button>
-    <button type="submit" class="button">I'm Feeling Lucky</button>
+    <div class="center-screen">
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google" class="logo">
+    </div>
+
+    <div>
+        <input type="search" class="search-bar">
+    </div>
+    
+    <div class="center-button">
+        <button type="submit" class="button-extra">Google Search</button>
+        <button type="submit" class="button-extra" style="margin-left: 10px;">I'm Feeling Lucky</button>
+    </div>
+
+    <div style="margin-top: 20px">
+        <button type="submit" class="small-buttons">About</button>
+        <button type="submit" class="small-buttons">Store</button>
+            <div style="margin-left: 650px; position: relative; bottom: 20px;">
+            <button type="submit" class="small-buttons">Gmail</button>
+            <button type="submit" class="small-buttons">Images</button>
+            <button type="submit" class="sign-in"><b>Sign in</b></button>
+            </div>
+    </div>    
 </body>
 </html>
